@@ -39,7 +39,7 @@ h3 {
 p {
 	font-size: .875em;
 	line-height: 21px;
-    padding: 0 30px;
+	padding: 10px 0;
 }
 
 /*The widths are in a percentage!*/
@@ -49,11 +49,15 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
+	text-align: center;
 	margin: 0;
-	padding: 38px 0;
+	padding: 30px 0;
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -61,7 +65,7 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 30px 0;
 }
 
 header nav ul {
@@ -71,10 +75,13 @@ header nav ul {
 
 header nav ul li {
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 10px;
+	width: 100%;
+	list-style: none;
+
 }
 
 header nav ul li a{
@@ -120,10 +127,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
-	
+
 }
 
 .section-one h3 {
@@ -131,13 +138,12 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -175,4 +181,15 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+
+/*****TABLET*****/
+@media (min-width: 768px) {
+
+}
+
+/*****DESKTOP*****/
+@media (min-width: 1200px) {
+
 }
